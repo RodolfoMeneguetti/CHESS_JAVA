@@ -1,13 +1,14 @@
 package Application;
 
-import boardGame.Board;
-import boardGame.Position;
+
+import chess.ChessMatch;
 
 public class Program {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws RuntimeException{
 		
-		Board board = new Board(8 , 8);
+		ChessMatch chessMatch = new ChessMatch();
+		UI.printBoard(chessMatch.getPieces());
 		
 	}
 
